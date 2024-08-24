@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\noticia;
-use App\Http\Requests\StorenoticiaRequest;
-use App\Http\Requests\UpdatenoticiaRequest;
+use App\Models\Noticia;
+use App\Http\Requests\StoreNoticiaRequest;
+use App\Http\Requests\UpdateNoticiaRequest;
 
 class NoticiaController extends Controller
 {
@@ -31,10 +31,10 @@ class NoticiaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorenoticiaRequest  $request
+     * @param  \App\Http\Requests\StoreNoticiaRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorenoticiaRequest $request)
+    public function store(StoreNoticiaRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class NoticiaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\noticia  $noticia
+     * @param  \App\Models\Noticia  $Noticia
      * @return \Illuminate\Http\Response
      */
-    public function show(noticia $noticia)
+    public function show(Noticia $Noticia)
     {
         //
     }
@@ -53,10 +53,10 @@ class NoticiaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\noticia  $noticia
+     * @param  \App\Models\Noticia  $Noticia
      * @return \Illuminate\Http\Response
      */
-    public function edit(noticia $noticia)
+    public function edit(Noticia $Noticia)
     {
         //
     }
@@ -64,11 +64,11 @@ class NoticiaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatenoticiaRequest  $request
-     * @param  \App\Models\noticia  $noticia
+     * @param  \App\Http\Requests\UpdateNoticiaRequest  $request
+     * @param  \App\Models\Noticia  $Noticia
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatenoticiaRequest $request, noticia $noticia)
+    public function update(UpdateNoticiaRequest $request, Noticia $Noticia)
     {
         //
     }
@@ -76,10 +76,10 @@ class NoticiaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\noticia  $noticia
+     * @param  \App\Models\Noticia  $Noticia
      * @return \Illuminate\Http\Response
      */
-    public function destroy(noticia $noticia)
+    public function destroy(Noticia $Noticia)
     {
         //
     }
