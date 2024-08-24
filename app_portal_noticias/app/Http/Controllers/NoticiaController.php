@@ -15,7 +15,8 @@ class NoticiaController extends Controller
      */
     public function index()
     {
-        //
+        $noticias = Noticia::orderByDesc('created_at')->limit(10)->get();
+        return view('noticia', compact(['noticias']));
     }
 
     /**
